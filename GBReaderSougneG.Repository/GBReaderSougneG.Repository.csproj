@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>GBReaderSougneG.Infrastructure</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\GBReaderSougneG.Domains\GBReaderSougneG.Domains.csproj" />
+      <ProjectReference Include="..\GBReaderSougneG.Infrastructures\GBReaderSougneG.Infrastructures.csproj" />
+    </ItemGroup>
+
+</Project>

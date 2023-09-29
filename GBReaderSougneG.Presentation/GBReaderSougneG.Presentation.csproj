@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>latestmajor</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\GBReaderSougneG.Domains\GBReaderSougneG.Domains.csproj" />
+      <ProjectReference Include="..\GBReaderSougneG.Repositories\GBReaderSougneG.Repositories.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <AdditionalFiles Include="../CodeMetricsConfig.txt" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Events" />
+    </ItemGroup>
+
+</Project>

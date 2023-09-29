@@ -1,0 +1,18 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="100" d:DesignHeight="70"
+             x:Class="GBReaderSougneG.Avalonia.Controls.HistoryNodeItem">
+    <Border  Background="#C0C0C0"
+             CornerRadius="8"
+             Padding="9"
+             Margin="2"
+    >
+        <StackPanel>
+            <TextBlock x:Name="Date">01/01/0001</TextBlock>
+            <TextBlock x:Name="Time">00:00</TextBlock>
+            <TextBlock x:Name="PageNumber" >Page: X</TextBlock>
+        </StackPanel>
+    </Border>
+</UserControl>

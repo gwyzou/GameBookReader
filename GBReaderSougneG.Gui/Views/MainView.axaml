@@ -1,0 +1,45 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Initialized="StyledElement_OnInitialized"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="GBReaderSougneG.Avalonia.Views.MainView">
+    <StackPanel MinHeight="150" MinWidth="500">
+        <StackPanel Height="30" Background="#808080">
+            <TextBlock HorizontalAlignment="Center" FontSize="24" >
+                Let's PLay To Infinite Game Book
+            </TextBlock>
+        </StackPanel>
+        <Grid ColumnDefinitions="250,8,500*">
+            <StackPanel Grid.Column="0" Background="#E0E0E0" x:Name="CurrentBook" VerticalAlignment="Stretch">
+                <StackPanel Spacing="9" Margin="9">
+                    <Image Source="/Resources/NoImgBook.png" Width="110" HorizontalAlignment="Center"/>
+                    <StackPanel>
+                        <TextBlock x:Name="Title" Text="(Title)" FontSize="20" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                        <TextBlock x:Name="Author" Text="(Author)" FontSize="16" HorizontalAlignment="Center"/>
+                        <TextBlock x:Name="Isbn" Text="(ISBN)" FontSize="12" FontStyle="Italic" HorizontalAlignment="Center"/>
+                        <TextBlock x:Name="Resume" Text="(Resume)" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </StackPanel>
+                <Grid ColumnDefinitions="*,Auto,*" RowDefinitions="50,*,9">
+                    <Button  Grid.Row="1" Grid.Column="1" x:Name="Start" Click="OnNewGame_Click" >Start/Load Game</Button>
+                    <Button  Grid.Row="0" Grid.Column="1" x:Name="Reload" 
+                             IsVisible="False" IsEnabled="False" Click="OnReload_Click">Reload</Button>
+                </Grid>
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <Grid RowDefinitions="4,Auto,8,*">
+                    <StackPanel Grid.Row="1" Spacing="9">
+                        <Grid ColumnDefinitions="128*,4,Auto,9,Auto,9">
+                            <TextBox Grid.Column="0" x:Name="SearchBar" Watermark="Search"/>
+                            <Button Grid.Column="2" Click="OnSearch_Click" x:Name="SearchButton">Search</Button>
+                            <Button Grid.Column="4" Click="OnHistory_Click" x:Name="HistoryButton">History</Button>
+                        </Grid>
+                    </StackPanel>
+                    <WrapPanel Grid.Row="3"  x:Name="BookList" ItemWidth="140"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</UserControl>

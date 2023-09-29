@@ -1,0 +1,42 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="GBReaderSougneG.Avalonia.Views.EndView">
+    <StackPanel>
+        <StackPanel Height="30" Background="#808080">
+            <TextBlock HorizontalAlignment="Center" FontSize="24" >
+                Let's PLay To Infinite Game Book
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Background="#E0E0E0" x:Name="CurrentBook" VerticalAlignment="Stretch" >
+            <StackPanel Margin="9" >
+                <TextBlock x:Name="Title" Text="(Title)" FontSize="20" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                <TextBlock x:Name="Author" Text="(Author)" FontSize="16" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="Isbn" Text="(ISBN)" FontSize="12" FontStyle="Italic" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+        <Grid ColumnDefinitions="200,*,200">
+            <StackPanel Grid.Column="1">
+                <TextBlock FontSize="16" HorizontalAlignment="Center" TextWrapping="Wrap">Well Done, You've Reached an End of this book</TextBlock>
+                <TextBlock FontSize="16" HorizontalAlignment="Center" TextWrapping="Wrap">Please play again to find out more ends</TextBlock>
+
+                <Border Background="#F0F0F0"
+                        CornerRadius="8"
+                        Padding="9"
+                        Margin="9"
+                >
+                    <StackPanel >
+                        <TextBlock   Text="Page Content :" FontSize="20" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                        <TextBlock   TextWrapping="Wrap" FontSize="16" x:Name="PageText">
+                            efqlefkl
+                            qfknldfnlqskdfndqksnfsqfnkqsfzrddddddddddddddddddddddddddddddddddddddddddderze
+                        </TextBlock>
+                    </StackPanel>
+                </Border>
+                <Button HorizontalAlignment="Center" Click="OnClick_GoBack"> Go Back</Button>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</UserControl>

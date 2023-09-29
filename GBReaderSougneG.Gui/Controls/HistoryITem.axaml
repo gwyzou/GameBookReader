@@ -1,0 +1,17 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="760" d:DesignHeight="110"
+             x:Class="GBReaderSougneG.Avalonia.Controls.HistoryITem">
+    <Border  Background="#E0E0E0"
+            CornerRadius="8"
+            Padding="9"
+            Margin="2"
+    >
+     <StackPanel>
+         <TextBlock x:Name="Isbn">0-000000-00-0</TextBlock>
+         <WrapPanel x:Name="HistoryList" ItemWidth="100" ItemHeight="70"/>
+     </StackPanel>   
+    </Border>
+</UserControl>

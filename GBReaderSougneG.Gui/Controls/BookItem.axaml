@@ -1,0 +1,22 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="140" d:DesignHeight="200"
+             x:Class="GBReaderSougneG.Avalonia.Controls.BookItem"
+             PointerPressed="ViewInfo_onClick">
+        <Border BorderBrush="{DynamicResource SystemAccentColorDark3}"
+                Background="#F0F0F0"
+                BorderThickness="4"
+                CornerRadius="8"
+                Padding="4"
+                Margin="5"
+                >
+            <StackPanel >
+                <Image Source="/Resources/NoImgBook.png" Width="110"/>
+                <TextBlock x:Name="Title" Text="Title" FontSize="20" />
+                <TextBlock x:Name="Author" Text="Author" FontSize="16"/>
+                <TextBlock x:Name="Isbn" Text="ISBN" FontSize="12" FontStyle="Italic"/>
+            </StackPanel>
+        </Border>
+</UserControl>
